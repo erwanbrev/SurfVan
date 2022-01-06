@@ -1,0 +1,166 @@
+/*DECALARATION DE POLICES*/
+@font-face {
+  font-family: "theblacklist";
+  src: url("../fonts/theblacklist.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("..fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto-Light.ttf");
+}
+/* DECLARATION DE VARIABLES */
+:root {
+  --lightcoral: lightcoral;
+  --white: #fff;
+}
+/* REGLAGE DE LA PAGE WEB ENTIERE */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* PARAMETRAGE DU CORPS DE PAGE */
+body {
+  background-color: #fff;
+  font-family: "Roboto-Light", "sans-serif";
+  color: #000;
+}
+
+/* DEBUT de la creation du HEADER */
+/* DEFINITION D'UN TITRE */
+h1 {
+  font-family: "theblacklist", "Arial", "sans-serif";
+  margin-top: 0;
+  padding-top: 30px;
+}
+/* DEFINITION D'UN SOUS TITRE */
+h2 {
+  font-size: 1.3em;
+  width: 400px;
+  margin: auto;
+  margin-top: 10px;
+}
+h1,
+h2 {
+  color: var(--white);
+}
+/* PARAMETRAGE DU HEADER */
+header {
+  text-align: center;
+  background: linear-gradient(var(--lightcoral), yellow);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 30px;
+}
+/* FORMAT DU LOGO */
+#logo {
+  margin-top: 30px;
+  width: 70px;
+  height: 70px;
+}
+nav {
+  text-align: center;
+  font-size: 1.1em;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  margin: 0 20px;
+}
+/* FIN de la creation du HEADER */
+/* DEFINITION DU SOUS TITRE H3 */
+h3 {
+  font-family: "Roboto-Bold";
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+
+/* DISPOSITION DE LA GALERIE */
+.grid-galerie {
+  /* TAILLE MAX DE LA GRILLE */
+  max-width: 1100px;
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  /* BORDURE VISIBLE POUR MISE EN PAGE */
+  /* border: 1px solid #222; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  /* ESPACE DANS LE GRID */
+  justify-content: center;
+  gap: 40px;
+}
+
+/* CADRE D'UNE IMAGE */
+figure {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.4);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* FORMAT D'UNE IMAGE */
+img {
+  width: 300px;
+  height: 200px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* AJOUT D'UNE DESCRIPTION SOUS UNE IMAGE */
+figcaption {
+  /* PARAMETRAGE DE LA COULEUR DE FOND */
+  background-color: var(--lightcoral);
+  color: #fff;
+  font-size: 1rem;
+  padding: 3px;
+  text-align: center;
+  /* ARRONDISSEMENT DES BORDS */
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* CADRE DE CONTACT EMAIL */
+.p-center {
+  text-align: center;
+}
+/* CLASSE PERMETTANT DE PARAMETRER LA ZONE DE CONTACT */
+.flex-contact {
+  /* DEFINITION D'UN CADRE */
+  border: 1px solid var(--lightcoral);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* ALIGNEMENT DU TEXTE AU CENTRE */
+  text-align: center;
+  align-items: center;
+  padding: 30px;
+  /* DEFINITION TAILLE DU CADRE */
+  height: 2vw;
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+/* MODIFICATION DU TYPE DE GRAS */
+b {
+  font-family: "Roboto-Bold";
+}
+/* MISE EN PAGE DU PIED DE PAGE */
+footer {
+  display: flex;
+  background-color: var(--lightcoral);
+  height: 6vw;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}

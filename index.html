@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Surf Van</title>
+    <link rel="stylesheet" href="./design/styles.css" />
+  </head>
+
+  <!-- DEFINITION DU CORPS DE PAGE  -->
+  <body>
+    <!-- DEFINITION DE LA TETE DE LA PAGE, PRECISEMENT LA BANNIERE SITUEE EN HAUT DE LA PAGE -->
+    <header>
+      <!-- TITRE PRINCIPAL ET SECONDAIRE -->
+      <h1>Surf Van</h1>
+      <h2>Vans et Fourgons Aménagés</h2>
+      <!-- IMPORTATION DU LOGO -->
+      <img id="logo" src="./pictures/Summer.png" alt="summer-img" />
+      <!-- DEFINITION DE LA BARRE DE NAVIGATION -->
+      <nav>
+        <!-- RENVOI VERS LA PAGE D'ACCUEIL -->
+        <a href="./index.html">Accueil</a>
+        <!-- CREATION ANCRE VERS LA PRESENTATION DES VANS -->
+        <a href="#projets">Vans</a>
+        <!-- CREATION ANCRE VERS L'OPTION DE CONTACT -->
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- DEFINITON DE LA ZONE PRINCIPALE DE LA PAGE  -->
+    <main>
+      <section>
+        <h3>" BIENVENUE "</h3>
+        <!-- INSERTION D'UN PARAGRAPHE -->
+        <p class="p-center">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+          velit temporibus, expedita repellendus voluptatem nesciunt nulla odit
+          officia, minus, vitae est quibusdam eos enim ratione itaque
+          consectetur. Recusandae, tempore illum!
+        </p>
+        <!-- "ID" PRESENT POUR QUE LE RENVOI VERS CET EMPLACEMENT VU PRECEDEMMENT SOIT EFFECTIF -->
+        <h3 id="projets">" NOS VANS ET FOURGONS "</h3>
+      </section>
+      <!-- CREATION DE LA GALERIE PHOTO -->
+      <section class="grid-galerie">
+        <div>
+          <figure>
+            <!-- INSERTION D'UNE IMAGE SUR LA PAGE -->
+            <img src="./pictures/van1.jpg" alt="van1" />
+            <!-- FIGCAPTION POUR DEFINIR UNE DESCRIPTION DE L'IMG OBSERVEE -->
+            <figcaption>LE MODÈLE DE VAN</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img src="./pictures/van2.jpg" alt="van2" />
+            <figcaption>LE MODÈLE DE VAN</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img src="./pictures/van3.jpg" alt="van3" />
+            <figcaption>LE MODÈLE DE VAN</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img src="./pictures/van4.jpg" alt="van4" />
+            <figcaption>LE MODÈLE DE VAN</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img src="./pictures/van5.jpg" alt="van5" />
+            <figcaption>LE MODÈLE DE VAN</figcaption>
+          </figure>
+        </div>
+
+        <div class="grid-item">
+          <figure>
+            <img src="./pictures/van6.jpg" alt="van6" />
+            <figcaption>LE MODÈLE DE VAN</figcaption>
+          </figure>
+        </div>
+      </section>
+<!-- CREATION D'UNE ZONE DE CONTACT -->
+      <h3 id="contact">" CONTACT "</h3>
+      <section class="flex-contact">
+        <div>
+          <!-- PARAGRAPHE AVEC @MAIL EN GRAS -->
+          <p>
+            Si vous voulez me contacter, n'hésitez pas à m'envoyer un email à :
+            &nbsp <b>john@doe.com</b></a>
+          </p>
+        </div>
+      </section>
+    </main>
+<!-- PIED DE PAGE CONTENANT UN COPYRIGHT DE L'ENTREPRISE -->
+    <footer>
+      <p>2019 &copy; Surf Van</p>
+    </footer>
+  </body>
+</html>
